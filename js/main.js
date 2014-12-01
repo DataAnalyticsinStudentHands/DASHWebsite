@@ -55,7 +55,7 @@ $(document).ready(function() {
 	    });
 	}
 	topscroll=$('#slider').height()-$(window).height()+200;
-	if (topscroll<0) {topscroll=0};
+	if (topscroll<0) {topscroll=5};
 	document.getElementById("topscroll").innerHTML=topscroll+"/wh"+$(window).height()+"/s"+$('.slider').height()+"/ci"+$('.carousel-inner').height()+"nav"+$('.navbar').height();
 	// alert("hiiii");
 	// var owlItem = $('.owl-wrapper .owl-item'), //grab all projects

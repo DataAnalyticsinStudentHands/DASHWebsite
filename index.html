@@ -9,10 +9,10 @@
 		<title>Data Analytics in Student Hands</title>
 		<!-- Bootstrap -->
 		<!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- this is just a random cdn -->
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-		<!-- Google Font -->
-		<!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">	 -->
 		<!-- Animate -->
+		<!-- I disableed it because it will make the website laggy -->
 		<!-- <link href="css/animate/animate.css" rel="stylesheet"> -->
 		<!-- Fontawesome-->
 		<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -44,8 +44,6 @@
 			<span id="stattrig">trigger</span>
 			topscroll
 			<span id="topscroll">topscroll</span>
-<!-- 			statheight
-			<span id="statheight">statheight</span> -->
 		</div>
 		<div class="preloader">
 			<div class="loader-item">
@@ -420,11 +418,14 @@
 						<h3>Our Students</h3>
 						<form id="Filters">
 							<fieldset>
-								<select>
+<!-- 								<select>
 									<option value="">All</option>
 									<option value=".cStudent">Current</option>
 									<option value=".sStudent">Summer</option>
-								</select>
+								</select> -->
+								<button class="filter btn btn-custom btn-lg" data-filter=".cStudent">Current</button>
+								<button class="filter btn btn-custom btn-lg" data-filter=".sStudent">Summer</button>
+								<button class="filter btn btn-custom btn-lg" data-filter="">All</button>
 							</fieldset>
 							<fieldset>								
 								<button class="filter btn btn-custom btn-lg" data-filter=".Cdesign">Design</button>
@@ -568,6 +569,7 @@
 				</div>
 				<div class="row">
 					<!-- contact form -->
+					<!-- the form is not linked to anything yet -->
 					<div class="col-md-6 col-sm-6">
 						<div class="contact-form">
 						<form role="form">
