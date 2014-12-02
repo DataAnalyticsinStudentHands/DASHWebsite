@@ -134,7 +134,9 @@ $(document).ready(function() {
 		], {duration: 2000, fade: 1000});
 		return false;
 	} else {
+		// add change Background
 		$('head').append('<script type="text/javascript" src="js/changeBG.min.js"></script>');
+		// add animation
 		// $('head').append('<link href="css/animate/animate.css" rel="stylesheet">');
 		// $('head').append('<script src="js/wow/wow.min.js"></script>');
 		// wow = new WOW({
@@ -177,14 +179,29 @@ $(function() {
 // ****************************************************************			
 			
 $(document).ready(function() {
-	$("#featured-list").owlCarousel({
+	var owl = $("#featured-list");
+	owl.owlCarousel({
+		slideSpeed: 400,
+		paginationSpeed: 400,
+		rewindSpeed: 600,
+		navigation:true,
+		// autoHeight : true,
+		navigationText: [
+			"<span class='icon-chevron-left icon-white'><</span>",
+			"<span class='icon-chevron-right icon-white'>></span>"
+		],
 		items : 4, //4 items above 1000px browser width
 		itemsDesktop : [1000,4], //4 items between 1000px and 901px
 		itemsDesktopSmall : [900,2], // betweem 900px and 601px
 		itemsTablet: [600,1], //1 items between 600 and 0
 		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 	});
-   
+	// $(".next").click(function(){
+	// 	owl.trigger('owl.next');
+	// })
+	// $(".prev").click(function(){
+	// 	owl.trigger('owl.prev');
+	// })
 });
 
 // ***********************************
@@ -196,12 +213,12 @@ $(document).ready(function(){
 });	
 $( ".navbar-brand" ).click(function() {
 	$("html, body").animate({ scrollTop: 0 }, "slow");
-  	// $('html, body').animate({scrollTop:0}, 500, 'easeOutQuart');
-  	// $('#').stop().animate({'opacity': 0 });
-  	// $('html, body').stop().animate({'opacity': 1}, 600, 'linear');
-  // 	$('html, body').stop().animate({
-		// 	scrollTop: $($anchor.attr('href')).offset().top
-		// }, 1500, 'easeInOutExpo');
+	// $('html, body').animate({scrollTop:0}, 500, 'easeOutQuart');
+	// $('#').stop().animate({'opacity': 0 });
+	// $('html, body').stop().animate({'opacity': 1}, 600, 'linear');
+	// $('html, body').stop().animate({
+	// scrollTop: $($anchor.attr('href')).offset().top
+	// }, 1500, 'easeInOutExpo');
 });
 
 // ***********************************
