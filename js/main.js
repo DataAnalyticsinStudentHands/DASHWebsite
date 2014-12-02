@@ -16,11 +16,11 @@ $(window).scroll(function() {
 		// $(".fullSection").addClass("sectioncolor");
 		// $("#footer").removeClass("scroll_footer");
 		// $("#footerContainer").removeClass("scroll_footerContainer");
-		setTimeout(function(){$(".banner").css("opacity","0")}, 1500);
+		setTimeout(function(){$(".hbanner").css("opacity","0")}, 1500);
 		// $(".banner").css("opacity","0");
 	} else {
 		$(".navbar-fixed-top").removeClass("top-nav-collapse");
-		$(".banner").css("opacity","100");
+		$(".hbanner").css("opacity","100");
 		// $(".fullsection").removeClass("sectioncolor");
 		// $("#footer").addClass("scroll_footer");
 		// $("#footerContainer").addClass("scroll_footerContainer");
@@ -181,6 +181,22 @@ $(function() {
 $(document).ready(function() {
 	var owl = $("#featured-list");
 	owl.owlCarousel({
+		slideSpeed: 400,
+		paginationSpeed: 400,
+		rewindSpeed: 600,
+		navigation:true,
+		// autoHeight : true,
+		navigationText: [
+			"<span class='icon-chevron-left icon-white'><</span>",
+			"<span class='icon-chevron-right icon-white'>></span>"
+		],
+		items : 4, //4 items above 1000px browser width
+		itemsDesktop : [1000,4], //4 items between 1000px and 901px
+		itemsDesktopSmall : [900,2], // betweem 900px and 601px
+		itemsTablet: [600,1], //1 items between 600 and 0
+		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+	});
+	$("#partner-list").owlCarousel({
 		slideSpeed: 400,
 		paginationSpeed: 400,
 		rewindSpeed: 600,
