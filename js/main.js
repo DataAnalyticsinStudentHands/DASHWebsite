@@ -16,7 +16,9 @@ $(window).scroll(function() {
 		// $(".fullSection").addClass("sectioncolor");
 		// $("#footer").removeClass("scroll_footer");
 		// $("#footerContainer").removeClass("scroll_footerContainer");
-		setTimeout(function(){$(".hbanner").css("opacity","0")}, 1500);
+		// setTimeout(function(){
+			$(".hbanner").css("opacity","0")
+		// }, 1500);
 		// $(".banner").css("opacity","0");
 	} else {
 		$(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -55,7 +57,7 @@ $(document).ready(function() {
 	    });
 	}
 	topscroll=$('#slider').height()-$(window).height()+200;
-	if (topscroll<0) {topscroll=5};
+	if (topscroll<20) {topscroll=20};
 	document.getElementById("topscroll").innerHTML=topscroll+"/wh"+$(window).height()+"/s"+$('.slider').height()+"/ci"+$('.carousel-inner').height()+"nav"+$('.navbar').height();
 	// alert("hiiii");
 	// var owlItem = $('.owl-wrapper .owl-item'), //grab all projects
@@ -135,7 +137,7 @@ $(document).ready(function() {
 		return false;
 	} else {
 		// add change Background
-		$('head').append('<script type="text/javascript" src="js/changeBG.min.js"></script>');
+		// $('head').append('<script type="text/javascript" src="js/changeBG.min.js"></script>');
 		// add animation
 		// $('head').append('<link href="css/animate/animate.css" rel="stylesheet">');
 		// $('head').append('<script src="js/wow/wow.min.js"></script>');
@@ -180,6 +182,7 @@ $(function() {
 			
 $(document).ready(function() {
 	var owl = $("#featured-list");
+	// $(".owl-controls.clickable").css("width",$(window).width());
 	owl.owlCarousel({
 		slideSpeed: 400,
 		paginationSpeed: 400,
@@ -206,10 +209,10 @@ $(document).ready(function() {
 			"<span class='icon-chevron-left icon-white'><</span>",
 			"<span class='icon-chevron-right icon-white'>></span>"
 		],
-		items : 4, //4 items above 1000px browser width
+		items : 6, //4 items above 1000px browser width
 		itemsDesktop : [1000,4], //4 items between 1000px and 901px
-		itemsDesktopSmall : [900,2], // betweem 900px and 601px
-		itemsTablet: [600,1], //1 items between 600 and 0
+		itemsDesktopSmall : [900,3], // betweem 900px and 601px
+		itemsTablet: [600,3], //1 items between 600 and 0
 		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 	});
 	// $(".next").click(function(){
