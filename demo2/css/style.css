@@ -13,10 +13,20 @@
 html, body{
   height:100%;
 }
+/*color section */
+#About, #Partners {
+	background-color: gray;
+}
+#Projects, #team {
+	background-color: rgb(0,179,136);
+}
+#contact {
+	background-color: #f6f6f6;
+}
+
 /*slider fixes*/
-.fullpage {
-	height: 100%;
-	width: 100%;
+.slider-caption {
+	color: white !important;
 }
 #self {
 	background: url("../images/bg-10.jpg") no-repeat center center; 
@@ -152,12 +162,11 @@ button.filter.btn.btn-custom.btn-lg.active {
 }
 .uh img {height: 84px;}
 body {
-	
     font-family: MiloOT, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
-    color: #fff;
-	font-size: 18px;
+    /*color: #fff;*/
+	font-size: 14px;
 	line-height:1.8em;
 	/*padding-top:90px;*/
 }
@@ -173,7 +182,7 @@ h4,
 h5,
 h6 {
    font-weight:bold;
-   text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+   /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
 }
 
 a {
@@ -196,9 +205,9 @@ ul.unstyled {
 }
 
 .fullSection {
-	min-height:100%;
+	/*min-height:100%;*/
 	padding:100px 0;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 }
 .sectioncolor {
 	background-color: rgba(0,0,0,0.6);
@@ -365,18 +374,20 @@ ul.unstyled {
 
 
 @media (max-width:767px) {
-	
+	#banner-img {
+		height: 22px !important;
+	}
 	#fullscreen-slider .slider-caption  i{ 
-		font-size:80px;
+		font-size:36px;
 	}
 	
 	#fullscreen-slider .slider-caption h2 {
-		font-size:36px;
+		font-size:22px;
 	}
 	
 	#fullscreen-slider .slider-caption {
 		text-align:center;
-		padding:0 40px 80px;
+		padding:100px 40px 80px;
 	}	
 }
 
@@ -394,7 +405,7 @@ ul.unstyled {
 	font-size:46px;
 	padding:40px 0;
 	letter-spacing: -1px;
-	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	/*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
 }
 
 
@@ -632,6 +643,9 @@ a:hover .img_overlay {
 
 
 @media (max-width:480px) {
+	#banner-img {
+		height: 16px !important;
+	}
 	.modal-body img.pull-left {
 		margin: 10px 0;
 		max-width: 100%;
@@ -698,6 +712,9 @@ ul.social-link li a i{
 /* ==================================================
 	Footer
 ====================================================*/
+#banner-img {
+	height: 32px;
+}
 .banner {
 	text-align: center;
 	-webkit-transition: all 180ms linear;
@@ -722,6 +739,7 @@ ul.social-link li a i{
 #footer {
 	background: rgba(0,179,136,.9);
 	width: 100%;
+	color: white;
 	/*padding-bottom: 10px;*/
 }
 .scroll_footer {
@@ -837,9 +855,6 @@ input.btn.btn-lg:focus {
     height: 60px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-}
-.promise {
-    color: #fff;
 }
 
 

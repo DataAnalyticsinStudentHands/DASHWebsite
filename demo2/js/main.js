@@ -183,12 +183,12 @@ $(document).ready(function() {
 		slideSpeed: 400,
 		paginationSpeed: 400,
 		rewindSpeed: 600,
-		navigation:true,
+		// navigation:true,
 		// autoHeight : true,
-		navigationText: [
-			"<span class='icon-chevron-left icon-white'><</span>",
-			"<span class='icon-chevron-right icon-white'>></span>"
-		],
+		// navigationText: [
+		// 	"<span class='icon-chevron-left icon-white'><</span>",
+		// 	"<span class='icon-chevron-right icon-white'>></span>"
+		// ],
 		items : 4, //4 items above 1000px browser width
 		itemsDesktop : [1000,4], //4 items between 1000px and 901px
 		itemsDesktopSmall : [900,2], // betweem 900px and 601px
@@ -199,12 +199,12 @@ $(document).ready(function() {
 		slideSpeed: 400,
 		paginationSpeed: 400,
 		rewindSpeed: 600,
-		navigation:true,
+		// navigation:true,
 		// autoHeight : true,
-		navigationText: [
-			"<span class='icon-chevron-left icon-white'><</span>",
-			"<span class='icon-chevron-right icon-white'>></span>"
-		],
+		// navigationText: [
+		// 	"<span class='icon-chevron-left icon-white'><</span>",
+		// 	"<span class='icon-chevron-right icon-white'>></span>"
+		// ],
 		items : 6, //4 items above 1000px browser width
 		itemsDesktop : [1000,4], //4 items between 1000px and 901px
 		itemsDesktopSmall : [900,3], // betweem 900px and 601px
