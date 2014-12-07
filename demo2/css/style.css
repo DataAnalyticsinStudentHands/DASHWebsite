@@ -14,13 +14,30 @@ html, body{
   height:100%;
 }
 /*color section */
-#About, #Partners {
-	background-color: gray;
-}
-#Projects, #team {
+#becomePartner {
 	background-color: rgb(0,179,136);
 }
+#joinBoard {
+	background-color: rgb(200,16,46);
+}
+.white .btn-custom {
+	background:transparent;
+	border: 2px solid white;
+	color: white;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+} 
+#About, #Partners {
+	background-color: white;
+}
+#Projects, #team {
+	color: #333 !important;
+	background-color: #f6f6f6;
+}
+
+
 #contact {
+	color: #333 !important;
 	background-color: #f6f6f6;
 }
 
@@ -132,6 +149,8 @@ button.filter.btn.btn-custom.btn-lg.active {
 	background: #fff !important;
 	border: 2px solid #fff;
 	color:#333;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 #Filters>fieldset>select {
 	-webkit-appearance: none;
@@ -171,9 +190,9 @@ body {
 	/*padding-top:90px;*/
 }
 
-p {
+/*p {
 	color:#f1f1f1;
-}
+}*/
 
 h1,
 h2,
@@ -191,9 +210,9 @@ a {
     transition: all .3s ease-in-out;
 }
 a:active, a:visited {
-	color:#fff;
+	color:black;
 }
-
+	/*#fff;*/
 .headline {
 	margin-bottom:25px;
 }
@@ -218,14 +237,19 @@ ul.unstyled {
 
 .btn-custom {
 	background:transparent;
-	border: 2px solid #fff;
-	color:#fff;
+	border: 2px solid black;
+	color: black;
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
-.btn-custom:hover {
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus {
 	background: #fff !important;
 	border: 2px solid #fff;
 	color:#333;
+
+	box-shadow: none;
+	-webkit-box-shadow: none;
 }
 
 .form-control {
@@ -264,7 +288,7 @@ ul.unstyled {
 ====================================================*/
 
 .navbar-custom{
-	background-color:rgba(0,0,0,0.6);
+	background-color:white;
 	padding: 5px 0;
 	border-radius: 0;
 	/*border-top: 5px solid rgb(0,179,136);*/
@@ -272,23 +296,29 @@ ul.unstyled {
 }
 
 .navbar-custom .navbar-nav>li>a {
-	color: #fff;
+	/*color: #fff;*/
+	color: black;
 	font-size:20px;
 }
 
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus {
 	background:transparent;
-	color:#fff;
+	/*color:#fff;*/
+	color: black;
 	/*font-weight:bold;*/
 }
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li:focus {
 	background:transparent;
-	color:#fff;
+	/*color:#fff;*/
+	color: black;
 	border-bottom: 1px solid rgb(0,179,136);	
 }
-
+.navbar-toggle {
+	background-color: rgb(0,179,136);
+}
 .navbar-custom  .navbar-nav>li.active a {
-	color:#fff;	
+	/*color:#fff;	*/
+	color: black;
 }
 .navbar-custom  .navbar-nav>li.active {
 	border-bottom: 3px solid rgb(0,179,136);	
@@ -306,7 +336,7 @@ ul.unstyled {
 @media (max-width: 767px) {
 	
 	#top-nav {
-		background-color:rgba(0,0,0,0.6);
+		background-color:#f6f6f6;
 	}
 
 	.navbar-custom .navbar-brand  {
@@ -489,7 +519,8 @@ ul.unstyled {
 }
 
 .team-social li a  {
-	color: #fff;
+	/*color: #fff;*/
+	color: black;
 font-size: 18px;
 }
 
@@ -598,7 +629,7 @@ a:hover .img_overlay {
 
 
 .modal-content {
-	background-color:rgba(0,0,0,0.7);
+	background-color:white;
 }
 
 .modal-header {
@@ -714,6 +745,7 @@ ul.social-link li a i{
 ====================================================*/
 #banner-img {
 	height: 32px;
+	/*padding-bottom: 25px;*/
 }
 .banner {
 	text-align: center;
@@ -722,20 +754,9 @@ ul.social-link li a i{
 	-o-transition: all 180ms linear;
 	-ms-transition: all 180ms linear;
 	transition: all 180ms linear;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 45px;
+	padding-bottom: 45px;
 }
-.banner-btn {
-	text-align: center;
-	-webkit-transition: all 180ms linear;
-	-moz-transition: all 180ms linear;
-	-o-transition: all 180ms linear;
-	-ms-transition: all 180ms linear;
-	transition: all 180ms linear;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: rgba(200,16,46,.9);
-	}
 #footer {
 	background: rgba(0,179,136,.9);
 	width: 100%;
