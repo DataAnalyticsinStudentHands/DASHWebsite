@@ -32,7 +32,8 @@ html, body{
 }
 #Projects, #team {
 	color: #333 !important;
-	background-color: #f6f6f6;
+	/*background-color: #f6f6f6;*/
+	background-color: #f2f4f7;
 }
 
 
@@ -185,7 +186,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-size-adjust: 100%;
     /*color: #fff;*/
-	font-size: 14px;
+	font-size: 18px;
 	line-height:1.8em;
 	/*padding-top:90px;*/
 }
@@ -334,6 +335,9 @@ ul.unstyled {
 }
 
 @media (max-width: 767px) {
+	.team-image {
+		font-size: 4em !important;
+	}
 	
 	#top-nav {
 		background-color:#f6f6f6;
@@ -384,7 +388,9 @@ ul.unstyled {
 #fullscreen-slider .slider-caption p { 
 	margin-bottom:30px;
 }
-
+.carousel-control {
+	opacity: 0.1;
+}
 .carousel-control.right, .carousel-control.left {
 	background-image:none !important;
 }
@@ -494,6 +500,7 @@ ul.unstyled {
 .team-image {
 	float:left;
 	font-size: 7em;
+	margin-right: 25px;
 }
 
 .team-image img {
@@ -504,7 +511,7 @@ ul.unstyled {
 }
 
 .team-info {
-	margin-left:180px;
+	/*margin-left:30px;*/
 }
 
 .team-social {
@@ -638,7 +645,7 @@ a:hover .img_overlay {
 
 .modal-header .close {
 	font-size:42px;
-	color:#fff;
+	/*color:#fff;*/
 	opacity:1;
 	font-weight:normal;
 }
@@ -761,6 +768,8 @@ ul.social-link li a i{
 	background: rgba(0,179,136,.9);
 	width: 100%;
 	color: white;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	/*padding-bottom: 10px;*/
 }
 .scroll_footer {
@@ -776,7 +785,7 @@ ul.social-link li a i{
 /* ==================================================
 	UIToTop
 ====================================================*/
-
+/*
 #toTop {
 	display:none;
 	text-decoration:none;
@@ -814,21 +823,21 @@ ul.social-link li a i{
 
 #toTop:active, #toTop:focus {
 	outline:none;
-}
+}*/
 
-
+/*
 @media (max-width: 767px) {
 
 	#toTop {
 		bottom:10px;
 	}
 }
-
+*/
 /* ==================================================
 	timer  countdown
 ====================================================*/
 
-.timer {
+/*.timer {
     margin:50px 0;
 	display:block;
 	text-align:center;
@@ -877,7 +886,7 @@ input.btn.btn-lg:focus {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-
+*/
 
 /* ==================================================
 	Page Loader
@@ -1172,7 +1181,6 @@ body.nopadd {
 		width: 100%;	
 		z-index: 999;
 	}
-	
 	#main-content {
 		margin:0;
 	}
