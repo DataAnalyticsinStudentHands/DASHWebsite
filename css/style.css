@@ -5,13 +5,17 @@
 html, body{
   height:100%;
 }
+/*hide header menu bar on scroll*/
+.nav-hide {
+
+}
 /*color section */
 #becomePartner {
-	background-color: rgb(0,179,136);
+	background: #cccccc;
 }
-#joinBoard {
+/*#joinBoard {
 	background-color: rgb(200,16,46);
-}
+}*/
 .white .btn-custom {
 	background:transparent;
 	border: 1px solid white;
@@ -29,16 +33,16 @@ html, body{
 /*, #Partners {
 	background-color: white;
 }*/
-#About .container, #Projects .container {
+#About .container, #Projects .container{
 	/*color: #333 !important;*/
 	border-bottom: 1px solid #d6d6d6;
 	padding-bottom: 50px;
 	/*background-color: #f2f4f7;*/
 }
 	/*background-color: #f6f6f6;*/
-.container {
-	/*padding-bottom: 50px;*/
-	/*padding-top: 50px;*/
+.img-thumbnail {
+	border: none;
+	background-color: transparent;
 }
 #contact {
 	/*color: #333 !important;*/
@@ -84,7 +88,9 @@ html, body{
 	margin-top: 10px;
 	text-align: center;
 }
-
+.owl-theme .owl-controls .owl-page span {
+	background: #666666;
+}
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
@@ -231,6 +237,7 @@ ul.unstyled {
 	/*min-height:100%;*/
 	padding-top: 50px;
 	padding-bottom: 50px;
+	background-color: white;
 }
 .sectioncolor {
 	background-color: rgba(0,0,0,0.6);
@@ -267,7 +274,10 @@ ul.unstyled {
 	border-color:#fff;
 	box-shadow:none;
 }
-
+::-webkit-input-placeholder {font-size: 1.3em;}
+::-moz-placeholder {font-size: 1.3em;}
+:-ms-input-placeholder {font-size: 1.3em;}
+input:-moz-placeholder {font-size: 1.3em;}
 #bg_pattern { 
 	background-image: url(../images/bg_pattern.png); 
 	position: fixed; 
@@ -398,9 +408,9 @@ ul.unstyled {
 
 
 @media (max-width:767px) {
-	#banner-img {
+/*	#banner-img {
 		height: 22px !important;
-	}
+	}*/
 	#fullscreen-slider .slider-caption  i{ 
 		font-size:36px;
 	}
@@ -524,7 +534,9 @@ font-size: 18px;
 ====================================================*/
 
 
-
+.modal-backdrop {
+	background-color: white;
+}
 .modal-content {
 	background-color:#f2f4f7;
 }
@@ -571,9 +583,9 @@ font-size: 18px;
 
 
 @media (max-width:480px) {
-	#banner-img {
+/*	#banner-img {
 		height: 16px !important;
-	}
+	}*/
 	.modal-body img.pull-left {
 		margin: 10px 0;
 		max-width: 100%;
@@ -642,20 +654,21 @@ ul.social-link li a i{
 ====================================================*/
 #banner-img {
 	height: 32px;
+	max-width: 95% !important;
 	/*padding-bottom: 25px;*/
 }
 .banner {
 	text-align: center;
-	-webkit-transition: all 180ms linear;
+/*	-webkit-transition: all 180ms linear;
 	-moz-transition: all 180ms linear;
 	-o-transition: all 180ms linear;
 	-ms-transition: all 180ms linear;
-	transition: all 180ms linear;
+	transition: all 180ms linear;*/
 	padding-top: 45px;
 	padding-bottom: 45px;
 }
 #footer {
-	background: rgba(0,179,136,.9);
+	background: rgb(0,179,136);
 	width: 100%;
 	color: white;
 	padding-top: 30px;

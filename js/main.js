@@ -5,7 +5,7 @@
 //  Note :  make sure  use this  http://bootstrapwizard.info/Theme/Fullscreen/images/bg4.jpg"  when on server  but you can simply use  "images/bg1.jpg"  if you are on localhost
 //
 // ***********************************
-// $("body").backstretch(["images/bg3.jpg"], {duration: 1000, fade: 500});
+// $("#bg").backstretch(["images/bg-12.jpg"], {duration: 1000, fade: 500});
 // var topscroll=100;
 // $(window).scroll(function() {
 	// topscroll+"/"+$(window).height()+"/"+$('#slider').height()+"/"+$('#fullscreen-slider').height();
