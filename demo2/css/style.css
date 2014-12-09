@@ -1,15 +1,7 @@
-/*   
- * Template Name: featured-box itemscreen - One Page Template
- * Version: 1.0
- * Author: BootstrapWizard
- * Website: http://www.bootstrapwizard.info
-*/
-
 @font-face { font-family: MiloOT; src: url('../fonts/MiloOT.otf'); } 
-@font-face { font-family: MiloOT; font-weight: bold; src: url('../fonts/MiloOT-Bold.otf');}
-@font-face { font-family: Mi
-	loOT; font-weight: 100; src: url('../fonts/MiloOT-Exlig.otf');}
-
+/*@font-face { font-family: MiloOT; font-weight: bold; src: url('../fonts/MiloOT-Bold.otf');}*/
+@font-face { font-family: MiloOT; font-weight: 200; src: url('../fonts/MiloOT-Light.otf');}
+/*@font-face { font-family: MiloOT; font-weight: 100; src: url('../fonts/MiloOT-Thin.otf');}*/
 html, body{
   height:100%;
 }
@@ -22,8 +14,15 @@ html, body{
 }
 .white .btn-custom {
 	background:transparent;
-	border: 2px solid white;
+	border: 1px solid white;
 	color: white;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.white .btn-custom:hover, .white .btn-custom:focus, .white .btn-custom.focus {
+	background: #fff !important;
+	border: 1px solid #fff;
+	color: #333333;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 } 
@@ -32,10 +31,10 @@ html, body{
 }
 #Projects, #team {
 	color: #333 !important;
-	/*background-color: #f6f6f6;*/
+
 	background-color: #f2f4f7;
 }
-
+	/*background-color: #f6f6f6;*/
 
 #contact {
 	color: #333 !important;
@@ -147,9 +146,9 @@ button.filter.btn.btn-custom.btn-lg {
 	margin-bottom: 20px;
 }
 button.filter.btn.btn-custom.btn-lg.active {
-	background: #fff !important;
-	border: 2px solid #fff;
-	color:#333;
+	background: rgb(0,179,136) !important;
+	border: 1px solid rgb(0,179,136);
+	color:#fff;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
@@ -169,7 +168,6 @@ button.filter.btn.btn-custom.btn-lg.active {
 	border-radius: 6px;
 	border: 2px solid rgb(0,179,136);
 	font-size: 24px;
-	/*font-weight: bold;*/
 	padding: 10px 16px;
 	line-height: 1.33;
 	min-width: 25%;
@@ -187,6 +185,7 @@ body {
 	-webkit-text-size-adjust: 100%;
     /*color: #fff;*/
 	font-size: 18px;
+	font-weight: 200;
 	line-height:1.8em;
 	/*padding-top:90px;*/
 }
@@ -201,7 +200,7 @@ h3,
 h4,
 h5,
 h6 {
-   font-weight:bold;
+   font-weight:200;
    /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
 }
 
@@ -211,7 +210,7 @@ a {
     transition: all .3s ease-in-out;
 }
 a:active, a:visited {
-	color:black;
+	color:#333333;
 }
 	/*#fff;*/
 .headline {
@@ -238,26 +237,26 @@ ul.unstyled {
 
 .btn-custom {
 	background:transparent;
-	border: 2px solid black;
-	color: black;
+	border: 1px solid #333333;
+	color: #333333;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus {
-	background: #fff !important;
-	border: 2px solid #fff;
-	color:#333;
-
+	background: rgb(0,179,136) !important;
+	border: 1px solid rgb(0,179,136);
+	color:white;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
 
 .form-control {
 	height: 46px;
-	color:#fff;
-	background-color: rgba(0,0,0,0.3);
-	border: 1px solid rgba(255,255,255,0.5);
+	border: none !important;
+	/*color:#fff;*/
+	/*background-color: rgba(0,0,0,0.3);*/
+	/*border: 1px solid rgba(255,255,255,0.5);*/
 }
 
 .form-control:focus {
@@ -298,28 +297,24 @@ ul.unstyled {
 
 .navbar-custom .navbar-nav>li>a {
 	/*color: #fff;*/
-	color: black;
+	color: #333333;
 	font-size:20px;
 }
 
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li>a:focus {
 	background:transparent;
 	/*color:#fff;*/
-	color: black;
-	/*font-weight:bold;*/
+	color: #333333;
 }
 .navbar-custom .nav>li>a:hover, .navbar-custom .nav>li:focus {
 	background:transparent;
 	/*color:#fff;*/
-	color: black;
-	border-bottom: 1px solid rgb(0,179,136);	
-}
-.navbar-toggle {
-	background-color: rgb(0,179,136);
+	color: rgb(0,179,136);
+	/*border-bottom: 1px solid rgb(0,179,136);	*/
 }
 .navbar-custom  .navbar-nav>li.active a {
 	/*color:#fff;	*/
-	color: black;
+	color: #333333;
 }
 .navbar-custom  .navbar-nav>li.active {
 	border-bottom: 3px solid rgb(0,179,136);	
@@ -330,7 +325,8 @@ ul.unstyled {
 }
 
 .navbar-custom  .navbar-toggle .icon-bar {
-	background:#fff;
+	/*background:#fff;*/
+	background: rgb(0,179,136);
 	width:32px;
 }
 
@@ -527,107 +523,9 @@ ul.unstyled {
 
 .team-social li a  {
 	/*color: #fff;*/
-	color: black;
+	color: #333333;
 font-size: 18px;
 }
-
-
-
-
-
-/* ==================================================
-	Pricing
-====================================================*/
-
-#pricing {
-
-}
-
-.price-box {	
-	border: 4px solid #fff;
-	border-radius: 10px;
-	padding:10px;
-	margin:20px 0;
-}
-
-.price-title {
-	font-size: 24px;
-	font-weight: 600;
-	line-height: 42px;
-	padding: 20px 0;
-}
-
-.price-title span{
-	display: block;
-	font-size: 42px;
-	font-weight:700;
-}
-
-.price-action {
-	padding: 20px 0;
-}
-
-.price-box ul.price-list {
-
-}
-
-.price-box ul.price-list li {
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.price-box ul.price-list li:last-child { 
-	border:none;
-}
-
-
-/* ==================================================
-	Showcase
-====================================================*/
-
-.showcase {
-
-}
-
-.pic {
-	position:relative;
-	display: block;
-	margin: 15px 0;
-}
-.pic img{
-
-}
-a .img_overlay {
-	position: absolute;
-	top:0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #333;
-	background-color: rgba(0, 0, 0, 0.6);
-	background-image: url(../images/zoom.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	opacity: 0;
-	filter: alpha(opacity=0);
-    z-index: 0;   
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;	
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-khtml-border-radius: 3px;
-	border-radius: 3px;	
-}
-
-a:hover .img_overlay {
-	opacity: 1;
-	filter: alpha(opacity=100);
-    z-index: 1;	
-}
-	
-
 
 /* ==================================================
 	Modal
@@ -646,7 +544,7 @@ a:hover .img_overlay {
 .modal-header .close {
 	font-size:42px;
 	/*color:#fff;*/
-	opacity:1;
+	opacity: 1;
 	font-weight:normal;
 }
 
@@ -739,7 +637,7 @@ ul.social-link li a{
 }
 
 ul.social-link li a:hover{
-	opacity:1;
+	opacity: 1;
 }
 
 ul.social-link li a i{
@@ -782,111 +680,6 @@ ul.social-link li a i{
 }
 */
 
-/* ==================================================
-	UIToTop
-====================================================*/
-/*
-#toTop {
-	display:none;
-	text-decoration:none;
-	position:fixed;
-	bottom: 20px;
-	right: 10px;
-	overflow:hidden;
-	width:35px;
-	height:35px;
-	border:none;
-	text-indent:100%;
-	background:url(../images/totop.png) no-repeat left top;
-}
-
-#toTop:after {
-	 font-family:'FontAwesome';
-    content:"\f105";
-	color:#262626;
-	margin-right:10px;		
-}
-
-
-#toTopHover {
-	background:url(../images/totop.png) no-repeat left -35px;
-	width:35px;
-	height:35px;
-	display:block;
-	overflow:hidden;
-	float:left;
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
-}
-
-
-#toTop:active, #toTop:focus {
-	outline:none;
-}*/
-
-/*
-@media (max-width: 767px) {
-
-	#toTop {
-		bottom:10px;
-	}
-}
-*/
-/* ==================================================
-	timer  countdown
-====================================================*/
-
-/*.timer {
-    margin:50px 0;
-	display:block;
-	text-align:center;
-}
-
-.timer .days-wrapper, .timer .hours-wrapper, .timer .minutes-wrapper, .timer .seconds-wrapper {
-    display: inline-block;
-    width: 160px;
-    height: 160px;
-    margin: 10px;
-    border: 4px solid #fff;
-    font-size: 13px;
-	text-align: center;
-	padding: 12px 0 0;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-khtml-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.timer .days, .timer .hours, .timer .minutes, .timer .seconds {
-    font-size: 80px;
-    font-weight: 100;
-    line-height: 90px;
-}
-
-.free {
-    text-transform: uppercase;
-}
-.input-group {
-    margin: 20px auto;
-    width: 100%;
-	background:transparent;
-}
-input.btn.btn-lg,
-input.btn.btn-lg:focus {
-    outline: none;
-    width: 60%;
-    height: 60px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.btn-newsletter {
-    width: 40%;
-    height: 60px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-*/
 
 /* ==================================================
 	Page Loader
@@ -954,7 +747,7 @@ blockquote {
 }
 
 blockquote footer {
-	font-weight:bold;
+	font-weight:200;
 	color:#fff;
 }
 

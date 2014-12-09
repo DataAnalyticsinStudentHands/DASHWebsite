@@ -84,33 +84,6 @@ $(document).ready(function() {
 	//     });
 	// }
 });
-// $(document).load(function() {
-// 	var owlItem = $('.owl-wrapper .owl-item'), //grab all projects
-// 	    heighti = [], //create empty array to store height values
-// 	    tallst; //create variable to make note of the tallest projects
-// 	var heightstati=0;
-// 	if (owlItem.length) {
-// 	    function sameHeight() {
-// 	        owlItem.each(function() { //add heighti to array
-// 	            heighti.push($(this).height());
-// 	            alert("addheight"); 
-// 	        });
-// 	        tallst = Math.max.apply(null, heighti); //cache largest value
-// 	        owlItem.each(function() {
-// 	            $(this).css('min-height',tallst + 'px');
-// 	            alert("height");
-// 	        });
-// 	    };
-// 	    sameHeight();
-// 	    $(window).on('resize orientationchange', function () {
-// 	        tallst = 0, heighti.length = 0; //reset vars
-// 	        owlItem.each(function() {
-// 	            $(this).css('min-height','0'); //reset min-height
-// 	        }); 
-// 	        sameHeight(); //run it again 
-// 	    });
-// 	}
-// });
 $(document).ready(function() {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		// $('head').append('<script src="js/wow/wow.min.js"></script>');
@@ -179,7 +152,7 @@ $(function() {
 			
 $(document).ready(function() {
 	// $(".owl-controls.clickable").css("width",$(window).width());
-	$("#featured-list").owlCarousel({
+	$('#featured-list').owlCarousel({
 		slideSpeed: 400,
 		paginationSpeed: 400,
 		rewindSpeed: 600,
@@ -195,7 +168,7 @@ $(document).ready(function() {
 		itemsTablet: [600,2], //1 items between 600 and 0
 		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
 	});
-	$("#partner-list").owlCarousel({
+	$('#partner-list').owlCarousel({
 		slideSpeed: 400,
 		paginationSpeed: 400,
 		rewindSpeed: 600,
@@ -226,15 +199,15 @@ $(document).ready(function() {
 // $(document).ready(function(){
 // 	$().UItoTop({ easingType: 'easeOutQuart' });
 // });	
-$( ".navbar-brand" ).click(function() {
-	$("html, body").animate({ scrollTop: 0 }, "slow");
+$('.navbar-brand').click(function() {
+	$('html, body').animate({ scrollTop: 0 }, "slow");
 });
 
 // ***********************************
 // pageloader
 // ***********************************
 $(window).load(function(){
-	if($(".preloader").length > 0){
+	if($('.preloader').length > 0){
 		$('.preloader').fadeOut(1500);
 	}
 });
