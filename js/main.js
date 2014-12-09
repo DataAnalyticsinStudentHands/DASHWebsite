@@ -404,7 +404,7 @@ $(function(){
     },
     callbacks: {
       onMixFail: function(){
-        alert('No students were found matching the selected filters.');
+        // alert('No students were found matching the selected filters.');
       }
     }
   });    
