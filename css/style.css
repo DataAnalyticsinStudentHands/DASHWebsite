@@ -211,7 +211,8 @@ h4,
 h5,
 h6 {
    font-weight:200;
-   /*text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+    background-color:rgba(152, 149, 149, 0.5);
+   /*text-shadow: 10px 10px 10px rgba(0,0,0,0.5);*/
 }
 
 a {
