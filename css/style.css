@@ -52,6 +52,7 @@ html, body{
 /*slider fixes*/
 .slider-caption {
 	color: white !important;
+	text-shadow: 1px 1px 5px rgba(0,0,0,0.9),1px 1px 5px rgba(0,0,0,0.9);
 }
 #self {
 	background: url("../images/bg-10.jpg") no-repeat center center; 
@@ -380,7 +381,7 @@ input:-moz-placeholder {font-size: 1.3em;}
 }
 
 #fullscreen-slider .slider-caption h2 {
-	font-size:60px;
+	font-size:64px;
 	margin-bottom:30px;
 }
 
@@ -913,6 +914,13 @@ blockquote footer {
 }
 
 @media (min-width: 768px) {
+	h3 {
+		font-size: 36px;
+	}
+	.slider-caption {
+		width: 80%;
+		margin: auto;
+	}
 	.nav-tabs.nav-justified {
 		border-bottom: 3px solid #2babcf;
 	}
