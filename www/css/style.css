@@ -27,6 +27,7 @@ html, body{
 	background: #fff !important;
 	border: 1px solid #fff;
 	color: #333333;
+	text-shadow:none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 } 
