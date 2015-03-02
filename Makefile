@@ -1,6 +1,6 @@
 BUILD_DIR := ./dist
 PROD_REPO = ssh://webadmin@HouSuggest/~/website.git
-STAGING_REPO = HouSuggest:~/websitetest.git
+STAGING_REPO = ssh://webadmin@HouSuggest:~/websitetest.git
 
 # Deploy tasks
 staging: build git-staging deploy
@@ -29,14 +29,14 @@ git-prod:
 	git remote add origin $(PROD_REPO)
 
 git-staging:
-    	@ cd $(BUILD_DIR) && \
-    	git init && \
-    	git remote add origin $(STAGING_REPO)
+	@ cd $(BUILD_DIR) && \
+	git init && \
+	git remote add origin $(STAGING_REPO)
 
 deploy:
-    	@ cd $(BUILD_DIR) && \
-    	git add -A && \
-    	git commit -m "Release" && \
-    	git push -f origin +master:refs/heads/master
+	@ cd $(BUILD_DIR) && \
+	git add -A && \
+	git commit -m "Release" && \
+	git push -f origin +master:refs/heads/master
 
 .PHONY: install build clean deploy git-prod git-staging prod staging
