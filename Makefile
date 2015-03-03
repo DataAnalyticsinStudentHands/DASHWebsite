@@ -1,6 +1,6 @@
 BUILD_DIR := ./dist
-PROD_REPO = ssh://webadmin@HouSuggest/~/website.git
-STAGING_REPO = ssh://webadmin@HouSuggest:~/websitetest.git
+PROD_REPO = ssh://webadmin@www.housuggest.org/~/website.git
+STAGING_REPO = ssh://webadmin@www.housuggest.org:~/websitetest.git
 
 # Deploy tasks
 staging: build git-staging deploy
@@ -8,7 +8,7 @@ staging: build git-staging deploy
 	@ echo "Staging deploy complete"
 
 
-prod: build git-prod deploy
+prod: clean build git-prod deploy
 	@ git tag -f production 
 	@ echo "Production deploy complete"
 
