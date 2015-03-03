@@ -9,6 +9,8 @@ html, body{
 .nav-hide {
 
 }
+.app-icon {
+}
 /*color section */
 #becomePartner {
 	background: #fafafa;
@@ -305,10 +307,9 @@ input:-moz-placeholder {font-size: 1.3em;}
 ====================================================*/
 
 .navbar-custom{
-	background-color:white;
+	background-color:rgba(255,255,255,.99);
 	padding: 5px 0;
 	border-radius: 0;
-	/*border-top: 5px solid rgb(0,179,136);*/
 	margin: 0;
 }
 
@@ -674,8 +675,8 @@ ul.social-link li a i{
 	background: rgb(0,179,136);
 	width: 100%;
 	color: white;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	/*padding-bottom: 10px;*/
 }
 .scroll_footer {
