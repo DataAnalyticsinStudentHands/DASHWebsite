@@ -1073,11 +1073,11 @@ body.nopadd {
 /* Loaded */
 .loaded #loader {
     opacity: 0;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
 .loaded #loader-wrapper {
     visibility: hidden;
-    -webkit-transition: all 0.1s ease-out;
-    transition: all 0.1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }

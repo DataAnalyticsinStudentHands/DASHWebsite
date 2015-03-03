@@ -37,7 +37,7 @@ $(document).ready(function() {
 $(window).load(function() {
    setTimeout(function(){
         $('body').addClass('loaded');
-    }, 500);
+    }, 250);
 });  
 // **************************************
 // jQuery to collapse the navbar on scroll
