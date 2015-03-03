@@ -13,9 +13,6 @@ html, body{
 #becomePartner {
 	background: #fafafa;
 }
-/*#joinBoard {
-	background-color: rgb(200,16,46);
-}*/
 .white .btn-custom {
 	background:transparent;
 	border: 1px solid white;
@@ -31,9 +28,6 @@ html, body{
 	box-shadow: none;
 	-webkit-box-shadow: none;
 } 
-/*, #Partners {
-	background-color: white;
-}*/
 #About .container, #Projects .container{
 	/*color: #333 !important;*/
 	border-bottom: 1px solid #d6d6d6;
@@ -305,7 +299,7 @@ input:-moz-placeholder {font-size: 1.3em;}
 ====================================================*/
 
 .navbar-custom{
-	background-color:white;
+	background-color: rgba(255,255,255,.98);
 	padding: 5px 0;
 	border-radius: 0;
 	/*border-top: 5px solid rgb(0,179,136);*/
@@ -674,9 +668,8 @@ ul.social-link li a i{
 	background: rgb(0,179,136);
 	width: 100%;
 	color: white;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	/*padding-bottom: 10px;*/
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 .scroll_footer {
 	/*position: fixed;*/
@@ -997,9 +990,3 @@ body.nopadd {
 		padding:0;
 	}
 }
-
-
-
-
-
-
