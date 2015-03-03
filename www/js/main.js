@@ -5,26 +5,6 @@
 //  Note :  make sure  use this  http://bootstrapwizard.info/Theme/Fullscreen/images/bg4.jpg"  when on server  but you can simply use  "images/bg1.jpg"  if you are on localhost
 //
 // ***********************************
-// $("#bg").backstretch(["images/bg-12.jpg"], {duration: 1000, fade: 500});
-// var topscroll=100;
-// $(window).scroll(function() {
-	// topscroll+"/"+$(window).height()+"/"+$('#slider').height()+"/"+$('#fullscreen-slider').height();
-	// if ($(".navbar").offset().top > topscroll) {
-		// $(".navbar-fixed-top").addClass("top-nav-collapse");
-		// $(".fullSection").addClass("sectioncolor");
-		// $("#footer").removeClass("scroll_footer");
-		// $("#footerContainer").removeClass("scroll_footerContainer");
-		// setTimeout(function(){
-			// $(".hbanner").css("opacity","0")
-		// }, 1500);
-		// $(".banner").css("opacity","0");
-	// } else {
-		// $(".navbar-fixed-top").removeClass("top-nav-collapse");
-		// $(".fullsection").removeClass("sectioncolor");
-		// $("#footer").addClass("scroll_footer");
-		// $("#footerContainer").addClass("scroll_footerContainer");
-	// }
-// });
 $(document).ready(function() {
 	// make all slide the same height
 	var items = $('.carousel-inner .item'), //grab all slides
@@ -53,71 +33,12 @@ $(document).ready(function() {
 	        normalizeHeights(); //run it again 
 	    });
 	}
-	// topscroll=$('#slider').height()-$(window).height()+200;
-	// if (topscroll<20) {topscroll=20};
-	// document.getElementById("topscroll").innerHTML=topscroll+"/wh"+$(window).height()+"/s"+$('.slider').height()+"/ci"+$('.carousel-inner').height()+"nav"+$('.navbar').height();
-	// alert("hiiii");
-	// var owlItem = $('.owl-wrapper .owl-item'), //grab all projects
-	//     heights = [], //create empty array to store height values
-	//     tallest; //create variable to make note of the tallest projects
-	// var heightstat=0;
-	// if (owlItem.length) {
-	//     function sameHeight() {
-	//         owlItem.each(function() { //add heights to array
-	//             heights.push($(this).height()); 
-	//         });
-	//         tallest = Math.max.apply(null, heights); //cache largest value
-	//         owlItem.each(function() {
-	//             $(this).css('min-height',tallest + 'px');
-	//             // document.getElementById("statheight").innerHTML+=2;
-	//             alert("height");
-	//         });
-	//     };
-	//     sameHeight();
-	//     $(window).on('resize orientationchange', function () {
-	//         tallest = 0, heights.length = 0; //reset vars
-	//         owlItem.each(function() {
-	//             $(this).css('min-height','0'); //reset min-height
-	//             // document.getElementById("statheight").innerHTML+=1;
-	//         }); 
-	//         sameHeight(); //run it again 
-	//     });
-	// }
 });
-$(document).ready(function() {
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-		// $('head').append('<script src="js/wow/wow.min.js"></script>');
-		// $('head').append('<script type="text/javascript" src="js/changeBG.min.js"></script>');
-		// $('head').append('<link href="css/animate/animate.css" rel="stylesheet">');
-		// $('head').append('<script src="js/wow/wow.min.js"></script>');
-		// wow = new WOW({
-		// 	animateClass: 'animated',
-		// 	offset:       150
-		// });
-		// wow.init();
-		// $("body").backstretch([
-		// 	"images/bg-10.jpg",
-		// 	"images/bg-11.jpg",
-		// 	"images/bg-12.jpg",
-		// 	"images/bg0.jpg",
-		// 	"images/bg1.jpg",
-		// 	"images/bg2.jpg",
-		// 	"images/bg3.jpg"
-		// ], {duration: 2000, fade: 1000});
-		// return false;
-	} else {
-		// add change Background
-		// $('head').append('<script type="text/javascript" src="js/changeBG.min.js"></script>');
-		// add animation
-		// $('head').append('<link href="css/animate/animate.css" rel="stylesheet">');
-		// $('head').append('<script src="js/wow/wow.min.js"></script>');
-		// wow = new WOW({
-		// 	animateClass: 'animated',
-		// 	offset:       150
-		// });
-		// wow.init();
-	}
-});
+$(window).load(function() {
+   setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 500);
+});  
 // **************************************
 // jQuery to collapse the navbar on scroll
 // **************************************
