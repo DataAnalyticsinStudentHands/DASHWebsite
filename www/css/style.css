@@ -184,7 +184,7 @@ button.filter.btn.btn-custom.btn-lg.active {
  	z-index: 100;
  	display: block;
 }
-.uh img {height: 84px;}
+.uh img {max-height: 84px;max-width: 100%}
 body {
     font-family: MiloOT, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -366,16 +366,12 @@ input:-moz-placeholder {font-size: 1.3em;}
 	text-align:center;
 	padding:150px 140px 140px;
 }
+/*#fullscreen-slider .slider-caption { 
 
-#fullscreen-slider .slider-caption { 
-
-}
-
-#fullscreen-slider .slider-caption  i{ 
-	font-size:130px;
-}
+}*/
 
 #fullscreen-slider .slider-caption h2 {
+	padding-top:100px;
 	font-size:64px;
 	margin-bottom:30px;
 }
@@ -529,7 +525,9 @@ font-size: 18px;
 /* ==================================================
 	Modal
 ====================================================*/
-
+h2.modal-title {
+	font-weight: bold;
+}
 
 .modal-backdrop {
 	background-color: white;
@@ -663,13 +661,15 @@ ul.social-link li a i{
 	transition: all 180ms linear;*/
 	padding-top: 45px;
 	padding-bottom: 45px;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 #footer {
 	background: rgb(0,179,136);
 	width: 100%;
 	color: white;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 15px;
 }
 .scroll_footer {
 	/*position: fixed;*/
