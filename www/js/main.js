@@ -32,12 +32,109 @@ $(document).ready(function() {
 	        }); 
 	        normalizeHeights(); //run it again 
 	    });
-	}
+	};
+	// var Hitems = $('.featured-box .featured-box-sameHeight'),
+	//     Hheights = [],
+	//     Htallest;
+	// var Hheightstat=0;
+	// if (Hitems.length) {
+	//     function normalizeHeights() {
+	//         Hitems.each(function() {
+	//             Hheights.push($(this).height());
+	//         });
+	//         Htallest = Math.max.apply(null, Hheights);
+	//         Hitems.each(function() {
+	//             $(this).css('min-height',Htallest + 'px');
+	//         });
+	//     };
+	//     normalizeHeights();
+	//     $(window).on('resize orientationchange', function () {
+	//         Htallest = 0, Hheights.length = 0;
+	//         Hitems.each(function() {
+	//             $(this).css('min-height','0');
+	//         }); 
+	//         normalizeHeights();
+	//     });
+	// }
+});
+// $(document).ready(function() {
+// 	var Spanitems = $('.featured-box .featured-box-sameHeight .featured-info span'),
+// 	    heights = [],
+// 	    tallest;
+// 	var heightstat=0;
+// 	if (Spanitems.length) {
+// 	    function normalizeHeights() {
+// 	        Spanitems.each(function() {
+// 	            heights.push($(this).height());
+// 	        });
+// 	        tallest = Math.max.apply(null, heights);
+// 	        Spanitems.each(function() {
+// 	            $(this).css('min-height',tallest + 'px');
+// 	        });
+// 	    };
+// 	    normalizeHeights();
+// 	    $(window).on('resize orientationchange', function () {
+// 	        tallest = 0, heights.length = 0;
+// 	        Spanitems.each(function() {
+// 	            $(this).css('min-height','0');
+// 	        }); 
+// 	        normalizeHeights();
+// 	    });
+// 	}
+// });
+$(document).ready(function() {
+	
 });
 $(window).load(function() {
-   setTimeout(function(){
-        $('body').addClass('loaded');
-    }, 250);
+	setTimeout(function(){
+	    $('body').addClass('loaded');
+	}, 250);
+	var Hitems = $('.featured-box .featured-box-sameHeight'),
+	    hheights = [],
+	    htallest;
+	var hheightstat=0;
+	if (Hitems.length) {
+	    function normalizeHeights() {
+	        Hitems.each(function() {
+	            hheights.push($(this).height());
+	        });
+	        htallest = Math.max.apply(null, hheights);
+	        Hitems.each(function() {
+	            $(this).css('min-height',htallest + 'px');
+	        });
+	    };
+	    normalizeHeights();
+	    $(window).on('resize orientationchange', function () {
+	        htallest = 0, hheights.length = 0;
+	        Hitems.each(function() {
+	            $(this).css('min-height','0');
+	        }); 
+	        normalizeHeights();
+	    });
+	};
+	// var Spanitems = $('.featured-box .featured-box-sameHeight .featured-info span'),
+	//     sheights = [],
+	//     stallest;
+	// var sheightstat=0;
+	// if (Spanitems.length) {
+	//     function normalizeHeights() {
+	//         Spanitems.each(function() {
+	//             sheights.push($(this).height());
+	//         });
+	//         stallest = Math.max.apply(null, sheights);
+	//         Spanitems.each(function() {
+	//             $(this).css('min-height',stallest + 'px');
+	//         });
+	//     };
+	//     normalizeHeights();
+	//     $(window).on('resize orientationchange', function () {
+	//         stallest = 0, sheights.length = 0;
+	//         Spanitems.each(function() {
+	//             $(this).css('min-height','0');
+	//         }); 
+	//         normalizesHeights();
+	//     });
+	// };
 });  
 // **************************************
 // jQuery to collapse the navbar on scroll
