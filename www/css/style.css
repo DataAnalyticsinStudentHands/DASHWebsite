@@ -401,15 +401,12 @@ input:-moz-placeholder {font-size: 1.3em;}
 
 
 @media (max-width:767px) {
-/*	#banner-img {
-		height: 22px !important;
-	}*/
 	#fullscreen-slider .slider-caption  i{ 
 		font-size:36px;
 	}
 	
 	#fullscreen-slider .slider-caption h2 {
-		font-size:22px;
+		font-size:36px;
 	}
 	
 	#fullscreen-slider .slider-caption {
