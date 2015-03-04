@@ -746,21 +746,28 @@
                             <!-- the form is not linked to anything yet -->
                             <div class="col-md-6 col-sm-6">
                                 <div class="contact-form">
-                                    <form role="form">
+                                    <form method="post" action="../formmail.php"  role="form">
+                                    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+                                    <input type="hidden" name="recipients" value="dprice2@uh.edu" />
+                                    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+                                    <input type="hidden" name="subject" value="Sample FormMail Testing" />
+
+                                    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+                                    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
                                         <div class="form-group">
                                             <!-- <label>Name</label> -->
-                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input name="FullName" type="text" class="form-control" placeholder="Name">
                                         </div>
                                         <div class="form-group">
                                             <!-- <label>Email</label> -->
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input name="EmailAddr" type="email" class="form-control" placeholder="Email">
                                         </div>
                                         <div class="form-group">
                                             <!-- <label>Message</label> -->
                                             <textarea class="form-control" placeholder="Message" rows="7"></textarea>
                                         </div>
                                         <div class="pull-right">
-                                            <button type="submit" class="btn btn-custom btn-lg">Submit</button>
+                                            <input type="submit" value="Submit" class="btn btn-custom btn-lg">
                                         </div>
                                     </form>
                                     <div class="clearfix"></div>
@@ -802,21 +809,28 @@
                 <!-- the form is not linked to anything yet -->
                 <div class="col-md-6 col-sm-6">
                     <div class="contact-form">
-                        <form role="form">
+                        <form method="post" action="../formmail.php"  role="form">
+                            <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+                            <input type="hidden" name="recipients" value="plindner@uh.edu" />
+                            <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+                            <input type="hidden" name="subject" value="Sample FormMail Testing" />
+
+                            <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+                            <input type="hidden" name="mail_options" value="Exclude=email;realname" />
                             <div class="form-group">
                                 <!-- <label>Name</label> -->
-                                <input type="text" class="form-control" placeholder="Name">
+                                <input name="FullName" type="text" class="form-control" placeholder="Name">
                             </div>
                             <div class="form-group">
                                 <!-- <label>Email</label> -->
-                                <input type="email" class="form-control" placeholder="Email">
+                                <input name="EmailAddr" type="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="form-group">
                                 <!-- <label>Message</label> -->
                                 <textarea class="form-control" placeholder="Message" rows="7"></textarea>
                             </div>
                             <div class="pull-right">
-                                <button type="submit" class="btn btn-custom btn-lg">Submit</button>
+                                <input type="submit" value="Submit" class="btn btn-custom btn-lg">
                             </div>
                         </form>
                         <div class="clearfix"></div>
