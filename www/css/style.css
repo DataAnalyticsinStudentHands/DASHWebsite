@@ -299,7 +299,7 @@ input:-moz-placeholder {font-size: 1.3em;}
 ====================================================*/
 
 .navbar-custom{
-	background-color: rgba(255,255,255,.98);
+	background-color: rgba(255,255,255,.99);
 	padding: 5px 0;
 	border-radius: 0;
 	/*border-top: 5px solid rgb(0,179,136);*/
@@ -529,7 +529,9 @@ font-size: 18px;
 /* ==================================================
 	Modal
 ====================================================*/
-
+h2.modal-title {
+	font-weight: bold;
+}
 
 .modal-backdrop {
 	background-color: white;
