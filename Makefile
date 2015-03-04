@@ -1,6 +1,6 @@
 BUILD_DIR := ./dist
-PROD_REPO = ssh://webadmin@www.housuggest.org/~/website.git
-STAGING_REPO = ssh://webadmin@www.housuggest.org:~/websitetest.git
+PROD_REPO = ssh://HouSuggest/~/website.git
+STAGING_REPO = ssh://HouSuggest/~/websitetest.git
 
 # Deploy tasks
 staging: build git-staging deploy
