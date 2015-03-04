@@ -1302,11 +1302,7 @@ function LoadBuiltinLanguage()
 	// MSG_END_VERS_CHK is sent at the end of an Alert message when
 	// FormMail detects that there's a newer version available
 	// Parameters: none
-	$aMessages[MSG_END_VERS_CHK] = '***************************************************\n' .
-	                               'If you are happy with your current version and want\n' .
-	                               'to stop these reminders, edit formmail.php and\n' .
-	                               'set CHECK_FOR_NEW_VERSION to false.\n' .
-	                               '***************************************************\n';
+	$aMessages[MSG_END_VERS_CHK] = '';
 
 	// MSG_VERS_CHK is sent in an Alert message when
 	// FormMail detects that there's a newer version available
@@ -1476,10 +1472,7 @@ function LoadBuiltinLanguage()
 	// Parameters:
 	//  $FM_VERS    the FormMail version number
 	//  $TECTITE    www.tectite.com
-	$aMessages[MSG_ABOUT_FORMMAIL] = 'Your form submission was processed by ' .
-	                                 '<a href="http://$TECTITE/">FormMail</a> ' .
-	                                 '($FM_VERS), a PHP script available from ' .
-	                                 '<a href="http://$TECTITE/">$TECTITE</a>.';
+	$aMessages[MSG_ABOUT_FORMMAIL] = '';
 
 	// MSG_PREG_FAILED is sent in an Alert message if the TectiteCRM
 	// system failed to return the expected result.
