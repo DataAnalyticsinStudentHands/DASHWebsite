@@ -3,7 +3,7 @@ PROD_REPO = ssh://HouSuggest/~/website.git
 STAGING_REPO = ssh://HouSuggest/~/websitetest.git
 
 # Deploy tasks
-staging: build git-staging deploy
+staging: clean build git-staging deploy
 	@ git tag -f staging
 	@ echo "Staging deploy complete"
 
