@@ -411,10 +411,12 @@ input:-moz-placeholder {font-size: 1.3em;}
 	#fullscreen-slider .slider-caption h2 {
 		font-size:36px;
 	}
-	
 	#fullscreen-slider .slider-caption {
 		text-align:center;
 		padding:100px 40px 80px;
+	}
+	#teamMems>div {
+		width:45%;
 	}	
 }
 
