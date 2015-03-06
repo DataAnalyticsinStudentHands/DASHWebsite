@@ -6,8 +6,11 @@ html, body{
   height:100%;
 }
 /*hide header menu bar on scroll*/
-.nav-hide {
-
+.btn {
+    outline: none! important;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus { 
+    outline: none ! important; outline-style: none! important; 
 }
 textarea {
   resize: vertical;
