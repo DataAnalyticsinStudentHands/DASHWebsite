@@ -9,6 +9,9 @@ html, body{
 .nav-hide {
 
 }
+textarea {
+  resize: vertical;
+}
 /*color section */
 #becomePartner {
 	background: #fafafa;
