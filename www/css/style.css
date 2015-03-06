@@ -549,6 +549,8 @@ h2.modal-title {
 
 .modal-body {
 	padding: 15px 30px;
+	clear: both;
+	overflow:auto;
 }
 
 .modal-body  h3{
