@@ -557,6 +557,10 @@ h2.modal-title {
 	clear: both;
 	overflow:auto;
 }
+.modal-body p {
+	clear: both;
+	overflow:auto;
+}
 
 .modal-body  h3{
 	margin-bottom:20px;
@@ -566,13 +570,19 @@ h2.modal-title {
 	margin:10px 0;
 }
 
+.modal-body .icon {
+	max-height: 180px;
+}
+
 .modal-body img.pull-left {
 	margin: 10px 25px 10px 0;
+	max-height: 350px;
 	max-width:286px;
 }
 
 .modal-body img.pull-right {
 	margin: 10px 0 10px 25px;
+	max-height: 350px;
 	max-width:286px;
 }
 
