@@ -29,9 +29,9 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a id="toHome" class="navbar-brand" href="#">
-                    <img style="height:48px" src="images/logo.png" alt="Data Analytics in Students Hand" />
+                    <img src="images/logo.png" alt="Data Analytics in Students Hand" />
                 </a>
-                <a class="navbar-brand page-scroll" style="height:1em;margin-top: 15px;margin-left: 8px" href="#team" data-toggle="modal" data-target="#joinBoard-modal"><i>Join us!</i></a>
+                <a class="navbar-brand page-scroll nav-join" href="#team" data-toggle="modal" data-target="#joinBoard-modal"><i>Join us!</i></a>
             </div>
             <div class="collapse navbar-collapse" id="top-nav">
                 <ul class="nav navbar-nav navbar-right">
@@ -55,7 +55,7 @@
     <!-- Slider -->
     <div id="slider" class="slider white">
         <!-- fullscreen-slider -->
-        <div id="fullscreen-slider" class="carousel slide" data-ride="carousel" style="margin:0">
+        <div id="fullscreen-slider" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                 <li data-target="#fullscreen-slider" data-slide-to="0" class="active"></li>
@@ -222,7 +222,8 @@
                     </div>
                     <a class="btn btn-custom">Read More</a> 
                 </div>
-                <div class="featured-box item text-center" data-toggle="modal" data-target="#featured-Local">
+                <div class="featured-box item text-center">
+                <!-- data-toggle="modal" data-target="#featured-Local" -->
                     <div class="featured-box-sameHeight">
                         <img class="img-responsive img-thumbnail" src="images/plants.jpg" alt="">
                         <div class="featured-info">
@@ -232,7 +233,7 @@
                             <p>It's the science of urban ecology: Houston needs to be green and vibrant, with plants for food and beauty and native plants for insects and birds to continue to thrive.</p>
                         </div>
                     </div>
-                    <a class="btn btn-custom">Read More</a> 
+                    <!-- <a class="btn btn-custom">Read More</a>  -->
                 </div>
                 <div class="featured-box item text-center" data-toggle="modal" data-target="#featured-CleanAir">
                     <div class="featured-box-sameHeight">
@@ -290,8 +291,8 @@
                         <p>
                             <img class="img-responsive pull-left" src="images/bonnerbuzz.jpg" alt=""/>
                             DASH and the Bonner Leaders are both new in the Honors College, and we share a common commitment to Houston and to service. By providing new tools, our students can contribute to their partner organizations earlier and with greater effect. The BonnerBuzz will let the students track their hours and their skills development, but also organize their teams and collaborate in simple, flexible and - ultimately - powerful ways.</p>
-                        <a href="https://itunes.apple.com/us/app/bonnerbuzz/id953562026?mt=8" target="_blank"><img style="height:48px;" src="images/app-store.png" alt="" /></a>
-                        <a href="https://play.google.com/store/apps/details?id=dash.summerofapps.vma.bonnerbuzz&hl=en" target="_blank"><img style="height:48px;" src="images/google-play-logo.png" alt="" /></a>
+                        <a href="https://itunes.apple.com/us/app/bonnerbuzz/id953562026?mt=8" target="_blank"><img class="store" src="images/app-store.png" alt="" /></a>
+                        <a href="https://play.google.com/store/apps/details?id=dash.summerofapps.vma.bonnerbuzz&hl=en" target="_blank"><img class="store" src="images/google-play-logo.png" alt="" /></a>
                         <h3>SHAPE Community Center</h3>
                         <p>
                             <img class="img-responsive pull-right icon" src="images/shape-icon.jpg" alt=""/>
@@ -304,7 +305,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -328,7 +329,7 @@
                         <img class="img-responsive pull-left" src="images/publicart-map.png" alt="" />
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -357,7 +358,7 @@
                             <img class="img-responsive pull-right" src="images/arteceva.jpg" alt="" />One of the most difficult conservation tasks at any museum is sculpture made from new materials. Plastic and vinyl, for example, slowly change shape over time. Laser scans will give us information about the structure that is lost in even the best photography, and will allow long-term conservation and care for sculpture in new materials.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -385,7 +386,7 @@
                             <img class="img-responsive pull-right" src="images/wordle.jpg" alt="" />Indoor air pollution has been one of the hardest parts of air pollution exposure for epidemiologists to model. We have one of the best monitor systems in the world for outdoor air, but without a better picture of indoor air we'll never know the full story. As we build data about Houston from the ground up, and from indoors to out, we can build a bridge to new science and to better health.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -400,18 +401,15 @@
                         <h2 class="modal-title">Price, Waterhouse, Cooper: Cyber-security Challenge</h2>
                     </div>
                     <div class="modal-body">
-                        
-                        
                         <p>
                             <img class="img-responsive pull-left" src="images/hats.jpg" alt="" />One of the fastest growing areas in computer science is cyber-security and Price, Waterhouse, Cooper has one of the most impressive operations anywhere. Their Houston office has state of the art cyber forensics facilities, and they are interested in attracting the best UH graduates to jobs in the field.</p>
                         <hr>
-                        
                         <p>
                             <img class="img-responsive pull-right" src="images/server.jpg" alt="" />On Friday, April 3rd, a select group of students will get the full day treatment – the morning will be filled with learning about cyber-security operations at PWC and the afternoon will be a contest to break into their servers. Students will get intensive contact with professionals throughout the day, and a range of future opportunities will result for the best students from the group. You don’t have to be in DASH, or in Honors, but you do need good skills on command line interfaces in a Linux environment, some preparation in basic cyber-security terminology and methods, and a willingness to learn.</p>
                         <p>If you’re interested in participating, apply <a target="_blank" href="http://housuggest.org/FormBuilder/#/form/240">here</a>.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -424,8 +422,8 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
                         <h2 class="modal-title">Local Leaves</h2>
-                        <img class="" style="height:48px;" src="images/app-store.png" alt="" />
-                        <img class="" style="height:48px;" src="images/google-play-logo.png" alt="" />
+                        <img class="store" src="images/app-store.png" alt="" />
+                        <img class="store" src="images/google-play-logo.png" alt="" />
                     </div>
                     <div class="modal-body">
                         <h3 class="text-center">Collaboration</h3>
@@ -442,7 +440,7 @@
                             <img class="img-responsive pull-right" src="images/img1.jpg" alt="" />about section Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper, in dignissim elit hendrerit. Quisque tempus arcu vulputate metus convallis elementum. Aenean rhoncus rutrum quam ut semper. Fusce ut eros quis metus ullamcorper commodo ut sit amet nisi. Cras mattis enim eu urna tristique posuere. In vitae adipiscing nulla. Phasellus purus eros, aliquam ac urna eget, dictum consequat turpis. Aliquam hendrerit odio ut placerat pharetra. Etiam quis auctor sapien. Praesent sed consectetur lorem, et gravida purus. about section Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper, in dignissim elit hendrerit. Quisque tempus arcu vulputate metus convallis elementum. Aenean rhoncus rutrum quam ut semper. Fusce ut eros quis metus ullamcorper commodo ut sit amet nisi. Cras mattis enim eu urna tristique posuere. In vitae adipiscing nulla. Phasellus purus eros, aliquam ac urna eget, dictum consequat turpis. Aliquam hendrerit odio ut placerat pharetra. Etiam quis auctor sapien. Praesent sed consectetur lorem, et gravida purus.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -475,7 +473,7 @@
                             <img class="img-responsive pull-left" src="images/wordle.jpg" alt="" />Working with collaborators at Texas Children's Hospital and Rice, we are exploring new machine learning techniques to old questions about air pollution and health. The problems of multiple pollutants have been especially tricky, and our techniques are particularly promising.<br></p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -488,8 +486,8 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
                         <h2 class="modal-title" id="myModalLabel3">Farmer Market</h2>
-                        <img class="" style="height:48px;" src="images/app-store.png" alt="" />
-                        <img class="" style="height:48px;" src="images/google-play-logo.png" alt="" />
+                        <img class="store" src="images/app-store.png" alt="" />
+                        <img class="store" src="images/google-play-logo.png" alt="" />
                     </div>
                     <div class="modal-body">
                         <h3 class="text-center">Center image with details 2</h3>
@@ -505,7 +503,7 @@
                             <img class="img-responsive pull-right" src="images/img1.jpg" alt="" />about section Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper, in dignissim elit hendrerit. Quisque tempus arcu vulputate metus convallis elementum. Aenean rhoncus rutrum quam ut semper. Fusce ut eros quis metus ullamcorper commodo ut sit amet nisi. Cras mattis enim eu urna tristique posuere. In vitae adipiscing nulla. Phasellus purus eros, aliquam ac urna eget, dictum consequat turpis. Aliquam hendrerit odio ut placerat pharetra. Etiam quis auctor sapien. Praesent sed consectetur lorem, et gravida purus. about section Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper diam nec augue semper, in dignissim elit hendrerit. Quisque tempus arcu vulputate metus convallis elementum. Aenean rhoncus rutrum quam ut semper. Fusce ut eros quis metus ullamcorper commodo ut sit amet nisi. Cras mattis enim eu urna tristique posuere. In vitae adipiscing nulla. Phasellus purus eros, aliquam ac urna eget, dictum consequat turpis. Aliquam hendrerit odio ut placerat pharetra. Etiam quis auctor sapien. Praesent sed consectetur lorem, et gravida purus.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-md btn-custom-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -547,7 +545,7 @@
     </div>
         <!-- ./projectIdeas -->    
         <div id="becomePartner" class="banner" data-toggle="modal" data-target="#partner-modal">
-            <button class="btn btn-custom btn-lg" style="left:50%">Project ideas?</button>
+            <button class="btn btn-custom btn-lg center-block" >Project ideas?</button>
         </div>
     <!-- More ideas? modal				-->
     <div class="modal fade" id="partner-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
@@ -681,7 +679,7 @@
                 <div class="col-md-3 col-sm-3 text-center mix cStudent Cdata" data-my-order="5">
                     <i class="fa fa-user"></i>
                     <h4>Ismelda Correa</h4>
-                    <p>Chemical Engineering Major</p>
+                    <p>Chemical Eng. Major</p>
                     <ul class="team-social">
                         <li><a href="#"><i class="fa fa-envelope"></i></a>
                         </li>
@@ -725,7 +723,7 @@
                 <div class="col-md-3 col-sm-3 text-center mix cStudent Ccode Cdesign" data-my-order="12">
                     <i class="fa fa-user"></i>
                     <h4>Vu Nguyen</h4>
-                    <p>Business Major</p>
+                    <p>MIS Major</p>
                     <ul class="team-social">
                         <li><a href="#"><i class="fa fa-envelope"></i></a>
                         </li>
@@ -787,7 +785,7 @@
                                     <h3>Contact</h3>
                                     <ul class="unstyled">
                                         <li><i class="fa fa-pencil"></i> Dr. Dan Price</li>
-                                        <li><i class="fa fa-envelope"></i>dprice2@uh.edu</li>
+                                        <li><i class="fa fa-envelope"></i><a href="mailto:dprice2@uh.edu">dprice2@uh.edu</a></li>
                                         <li><i class="fa fa-phone"></i>+1 (713) 743-4136</li>
                                         <li>
                                             <a target="_blank" class="uh" href="http://thehonorscollege.com/">
@@ -854,12 +852,11 @@
                 <div class="col-md-6 col-sm-6">
                     <div class="address">
                         <h3>Address</h3>
-                        <ul class="unstyled">
-                            <li><i class="fa fa-map-marker"></i> 212 M.D. Anderson Library, Houston, TX 77004</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:dash@uh.edu">dash@uh.edu</a></li>
-                            <li><i class="fa fa-phone"></i>+1 (713) 743-4581</li>
-                            <!-- <li><i class="fa fa-fax"></i>+40 (0) 123 1234 568</li> -->
-                        </ul>
+                        <table class="unstyled">
+                            <tr><td><i class="fa fa-map-marker"></i></td><td>212 M.D. Anderson Library,<br> Houston, TX 77004</td></tr>
+                            <tr><td><i class="fa fa-envelope"></i></td><td><a href="mailto:dash@uh.edu">dash@uh.edu</a></td></tr>
+                            <tr><td><i class="fa fa-phone"></td><td>+1 (713) 743-4581</td></tr>
+                        </table>
                     </div>
                 </div>
                 <!-- ./address -->

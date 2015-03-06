@@ -93,24 +93,27 @@ $(window).load(function() {
 	    hheights = [],
 	    htallest;
 	var hheightstat=0;
-	if (Hitems.length) {
-	    function normalizeHeights() {
-	        Hitems.each(function() {
-	            hheights.push($(this).height());
-	        });
-	        htallest = Math.max.apply(null, hheights);
-	        Hitems.each(function() {
-	            $(this).css('min-height',htallest + 'px');
-	        });
-	    };
-	    normalizeHeights();
-	    $(window).on('resize orientationchange', function () {
-	        htallest = 0, hheights.length = 0;
-	        Hitems.each(function() {
-	            $(this).css('min-height','0');
-	        }); 
-	        normalizeHeights();
-	    });
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+		} else {
+			if (Hitems.length) {
+			function normalizeHeights() {
+			Hitems.each(function() {
+			    hheights.push($(this).height());
+			});
+			htallest = Math.max.apply(null, hheights);
+			Hitems.each(function() {
+			    $(this).css('min-height',htallest + 'px');
+			});
+			};
+			normalizeHeights();
+			$(window).on('resize orientationchange', function () {
+			htallest = 0, hheights.length = 0;
+			Hitems.each(function() {
+			    $(this).css('min-height','0');
+			}); 
+			normalizeHeights();
+			});
+			};
 	};
 	// var Spanitems = $('.featured-box .featured-box-sameHeight .featured-info span'),
 	//     sheights = [],
