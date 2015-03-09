@@ -4,6 +4,7 @@
 /*@font-face { font-family: MiloOT; font-weight: 100; src: url('../fonts/MiloOT-Thin.otf');}*/
 html, body{
   height:100%;
+  width: 100%;
 }
 /*hide header menu bar on scroll*/
 .btn {
@@ -53,7 +54,8 @@ textarea {
 /*slider fixes*/
 .slider-caption {
 	color: white !important;
-	text-shadow: 1px 1px 5px rgba(0,0,0,0.9),1px 1px 5px rgba(0,0,0,0.9);
+	font-weight: 400;
+	/*text-shadow: 1px 1px 5px rgba(0,0,0,0.9),1px 1px 5px rgba(0,0,0,0.9);*/
 }
 #self {
 	background: url("../images/bg-10.jpg") no-repeat center center; 
