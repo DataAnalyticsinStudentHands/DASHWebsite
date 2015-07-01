@@ -1,6 +1,6 @@
 BUILD_DIR := ./dist
-PROD_REPO = ssh://HouSuggest/~/website.git
-STAGING_REPO = ssh://HouSuggest/~/websitetest.git
+PROD_REPO = ssh://webadmin@dash.hnet.uh.edu/~/CHWApp.git
+STAGING_REPO = ssh://webadmin@dash.hnet.uh.edu/~/CHWAppTest.git
 
 # Deploy tasks
 staging: clean build git-staging deploy
