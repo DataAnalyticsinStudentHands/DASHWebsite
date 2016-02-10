@@ -2,6 +2,108 @@
 /*@font-face { font-family: MiloOT; font-weight: bold; src: url('../fonts/MiloOT-Bold.otf');}*/
 @font-face { font-family: MiloOT; font-weight: 200; src: url('../fonts/MiloOT-Light.otf');}
 /*@font-face { font-family: MiloOT; font-weight: 100; src: url('../fonts/MiloOT-Thin.otf');}*/
+
+.hc-body{
+    height:100%;
+    width:100%;
+    background-color:whitesmoke;
+}
+.hc-one{
+    display:inline-block;
+}
+.hc-two{
+    display:none;
+}
+.hc-three{
+    display:none;
+}
+.hc-four{
+    display:none;
+}
+.hc-five{
+    display:none;
+}
+.hc-six{
+    display:none;
+}
+.healthcircle{
+    position:absolute;
+    border-radius: 50%;
+    align-content: center;
+}
+.healthsquare{
+    position:absolute;
+    height:25%;
+    width:25%;
+    text-align: center;
+}
+.hccenter {
+    height:55%;
+    width:55%;
+    left:20%;
+    top:20%;
+}
+.centercontent{
+    position:absolute;
+    top:15%;
+    left:25%;
+    background-color:transparent;
+}
+.hsurrounds{
+    height:25%;
+    width:25%;
+    border-style:solid;
+    background-color:transparent;
+}
+.hcbottom{
+    top:65%;
+    left:35%;
+}
+.hctop{
+    left:35%;
+}
+.hclefttop{
+    left:7%;
+    top:17%;
+}
+.hcleftbottom{
+    left:7%;
+    top:50%;
+}
+.hcrighttop{
+    left:63%;
+    top:17%;
+}
+.hcrightbottom{
+    left:63%;
+    top:50%;
+}
+.hcblack{
+    border-style:solid;
+    border-color:black;
+}
+.hcyellow{
+    border-color:#93932b;
+}
+.hcgreen{
+    border-color:green;
+}
+.hcblue{
+    border-color:blue;
+}
+.hcmagenta{
+    border-color:magenta;
+}
+.hcorange{
+    border-color:orange;
+}
+.hcred {
+    border-color:red;
+}
+.lefttop{
+    left:15%;
+    top:15%;
+}
 html, body{
   height:100%;
   width: 100%;
