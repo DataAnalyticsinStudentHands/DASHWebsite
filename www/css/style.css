@@ -35,6 +35,7 @@
     position:absolute;
     height:25%;
     width:25%;
+    top:3%;
     text-align: center;
 }
 .hccenter {
@@ -45,15 +46,15 @@
 }
 .centercontent{
     position:absolute;
-    top:15%;
-    left:25%;
+    top:2%;
+    left:18%;
     background-color:transparent;
 }
 .hsurrounds{
     height:25%;
     width:25%;
     border-style:solid;
-    background-color:transparent;
+    background-color:whitesmoke;
 }
 .hcbottom{
     top:65%;
